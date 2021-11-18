@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1684
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooApp", "ZooApp\ZooApp.csproj", "{C2022D79-7B9C-4554-A949-2C51E318B85B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controladores", "Controladores\Controladores.csproj", "{43DF3927-50F5-4D7E-B32F-86BF04372D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelos", "Modelos\Modelos.csproj", "{B1564DD6-2010-4675-8BE3-5F9846A67D80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2022D79-7B9C-4554-A949-2C51E318B85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2022D79-7B9C-4554-A949-2C51E318B85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2022D79-7B9C-4554-A949-2C51E318B85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2022D79-7B9C-4554-A949-2C51E318B85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43DF3927-50F5-4D7E-B32F-86BF04372D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DF3927-50F5-4D7E-B32F-86BF04372D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DF3927-50F5-4D7E-B32F-86BF04372D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DF3927-50F5-4D7E-B32F-86BF04372D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1564DD6-2010-4675-8BE3-5F9846A67D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1564DD6-2010-4675-8BE3-5F9846A67D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1564DD6-2010-4675-8BE3-5F9846A67D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1564DD6-2010-4675-8BE3-5F9846A67D80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E6D1F82-60E3-4656-9CD5-BF3B28EC8E7E}
+	EndGlobalSection
+EndGlobal
