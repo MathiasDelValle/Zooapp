@@ -9,6 +9,5 @@ namespace Modelos
     interface Model<i>
     {
         bool save();
-        i find(int id);
     }
 }
