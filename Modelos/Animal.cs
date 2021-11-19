@@ -12,6 +12,8 @@ namespace Modelos
         private int id;
         private string nombre;
         private Jaula jaula;
+        public int Id { get => id; set => id = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
 
         public Animal()
         {
@@ -36,16 +38,6 @@ namespace Modelos
             this.id = id;
             this.nombre = nombre;
             this.jaula = Jaula.find(idJaula);
-        }
-
-        public int Id()
-        {
-            return this.id;
-        }
-
-        public string Nombre()
-        {
-            return this.nombre;
         }
 
         public Jaula getJaula()

@@ -41,3 +41,4 @@ C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmAltaEspacio.res
 C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmAltaJaula.resources
 C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmModificarEspacio.resources
 C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmModificarJaula.resources
+C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.modificarAnimal.resources

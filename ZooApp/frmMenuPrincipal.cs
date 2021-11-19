@@ -98,5 +98,13 @@ namespace ZooApp
             modificarJaula.Parent = this;
             modificarJaula.Show();
         }
+
+        private void listadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            modificarAnimal modificarAnimal = new modificarAnimal();
+            modificarAnimal.TopLevel = false;
+            modificarAnimal.Parent = this;
+            modificarAnimal.Show();
+        }
     }
 }
