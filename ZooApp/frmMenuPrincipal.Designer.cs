@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.lblFecha = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblNivel = new System.Windows.Forms.Label();
@@ -37,10 +36,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.souvenirsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.compraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuAnimales = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuJaulas = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.menuEspacios = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuVentas = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,35 +124,91 @@
             // menuToolStripMenuItem
             // 
             this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.souvenirsToolStripMenuItem,
-            this.compraToolStripMenuItem,
+            this.menuAnimales,
+            this.menuJaulas,
+            this.menuEspacios,
+            this.menuVentas,
             this.cerrarSesionToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
-            // souvenirsToolStripMenuItem
+            // menuAnimales
             // 
-            this.souvenirsToolStripMenuItem.Name = "souvenirsToolStripMenuItem";
-            this.souvenirsToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.souvenirsToolStripMenuItem.Text = "Souvenirs";
+            this.menuAnimales.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.altaToolStripMenuItem,
+            this.listadoToolStripMenuItem});
+            this.menuAnimales.Name = "menuAnimales";
+            this.menuAnimales.Size = new System.Drawing.Size(180, 22);
+            this.menuAnimales.Text = "Animales";
             // 
-            // compraToolStripMenuItem
+            // menuJaulas
             // 
-            this.compraToolStripMenuItem.Name = "compraToolStripMenuItem";
-            this.compraToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.compraToolStripMenuItem.Text = "Compra";
+            this.menuJaulas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.altaToolStripMenuItem1,
+            this.listadoToolStripMenuItem1});
+            this.menuJaulas.Name = "menuJaulas";
+            this.menuJaulas.Size = new System.Drawing.Size(180, 22);
+            this.menuJaulas.Text = "Jaulas";
             // 
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar sesion";
+            this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
-            // contextMenuStrip1
+            // menuEspacios
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.menuEspacios.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.altaToolStripMenuItem2,
+            this.listadoToolStripMenuItem2});
+            this.menuEspacios.Name = "menuEspacios";
+            this.menuEspacios.Size = new System.Drawing.Size(180, 22);
+            this.menuEspacios.Text = "Espacios";
+            // 
+            // menuVentas
+            // 
+            this.menuVentas.Name = "menuVentas";
+            this.menuVentas.Size = new System.Drawing.Size(180, 22);
+            this.menuVentas.Text = "Venta";
+            this.menuVentas.Visible = false;
+            // 
+            // altaToolStripMenuItem
+            // 
+            this.altaToolStripMenuItem.Name = "altaToolStripMenuItem";
+            this.altaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaToolStripMenuItem.Text = "Alta";
+            // 
+            // listadoToolStripMenuItem
+            // 
+            this.listadoToolStripMenuItem.Name = "listadoToolStripMenuItem";
+            this.listadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoToolStripMenuItem.Text = "Listado";
+            // 
+            // altaToolStripMenuItem1
+            // 
+            this.altaToolStripMenuItem1.Name = "altaToolStripMenuItem1";
+            this.altaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.altaToolStripMenuItem1.Text = "Alta";
+            // 
+            // listadoToolStripMenuItem1
+            // 
+            this.listadoToolStripMenuItem1.Name = "listadoToolStripMenuItem1";
+            this.listadoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.listadoToolStripMenuItem1.Text = "Listado";
+            // 
+            // altaToolStripMenuItem2
+            // 
+            this.altaToolStripMenuItem2.Name = "altaToolStripMenuItem2";
+            this.altaToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.altaToolStripMenuItem2.Text = "Alta";
+            // 
+            // listadoToolStripMenuItem2
+            // 
+            this.listadoToolStripMenuItem2.Name = "listadoToolStripMenuItem2";
+            this.listadoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.listadoToolStripMenuItem2.Text = "Listado";
             // 
             // frmMenuPrincipal
             // 
@@ -162,6 +224,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmMenuPrincipal";
             this.Text = "frmMenuPrincipal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMenuPrincipal_FormClosed);
             this.Load += new System.EventHandler(this.frmMenuPrincipal_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -180,9 +243,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem souvenirsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem compraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuAnimales;
+        private System.Windows.Forms.ToolStripMenuItem menuJaulas;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem listadoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem menuEspacios;
+        private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem listadoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem menuVentas;
     }
 }

@@ -32,12 +32,31 @@ namespace ZooApp
         {
             lblUsuarioLogeado.Text = usuLogeado.nombre;
             lblFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            lblNivel.Text = (usuLogeado.controlTotal()) ? "Control Total" : "Solo venta";
+            if (!usuLogeado.controlTotal())
+            {
+                lblNivel.Text = "Solo Venta";
+                menuAnimales.Visible = false;
+                menuJaulas.Visible = false;
+                menuEspacios.Visible = false;
+                menuVentas.Visible = true;
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.frmLogin.Show();
+            this.Dispose();
+        }
+
+        private void frmMenuPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.frmLogin.Show();
+            this.Dispose();
         }
     }
 }
