@@ -85,7 +85,22 @@ namespace Modelos
 
         public bool save()
         {
-            return true;
+            string sql = "INSERT INTO jaulas (nombre, espacio_id) VALUES ('" + this.nombre + "', " + this.espacio.Id + ");";
+
+            if (this.id > 0)
+            {
+                sql = "UPDATE jaulas SET nombre = '" + this.nombre + "', jaula_id = " + this.espacio.Id + " WHERE id = " + this.id + ";";
+            }
+
+            Conexion con = new Conexion();
+            return con.queryInsertUpdate(sql);
+        }
+
+        public bool delete()
+        {
+            string sql = "UPDATE jaulas SET deleted_at = NOW() WHERE id = " + this.Id;
+            Conexion con = new Conexion();
+            return con.queryInsertUpdate(sql);
         }
 
         public static Jaula find(int id)

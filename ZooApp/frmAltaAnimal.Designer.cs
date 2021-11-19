@@ -102,6 +102,7 @@
             this.Controls.Add(this.txtNombreAnimal);
             this.Controls.Add(this.label1);
             this.Name = "frmAltaAnimal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alta Animal";
             this.Load += new System.EventHandler(this.frmAltaAnimal_Load);
             this.ResumeLayout(false);

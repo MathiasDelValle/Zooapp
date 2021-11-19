@@ -26,6 +26,12 @@ namespace Modelos
             this.nombre = nombre;
         }
 
+        public Espacio(int idEspacio, string nombre)
+        {
+            this.id = idEspacio;
+            this.nombre = nombre;
+        }
+
         public void setNombre(string nombre)
         {
             this.nombre = nombre;
@@ -88,7 +94,31 @@ namespace Modelos
             return a;
         }
 
-        public static bool existe(string nombre)
+        public static List<Espacio> all(bool activos = true)
+        {
+            Conexion con = new Conexion();
+            string sql = "SELECT * FROM espacios";
+            if (activos)
+            {
+                sql += " WHERE deleted_at IS NULL";
+            }
+
+            DataTable dt = con.queryConsulta(sql);
+
+            List<Espacio> espacios = new List<Espacio>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                int idEspacio = (int)row["id"];
+                string nombre = row["nombre"].ToString();
+
+                espacios.Add(new Espacio(idEspacio, nombre));
+            }
+
+            return espacios;
+        }
+
+        public static bool exist(string nombre)
         {
             Conexion con = new Conexion();
             DataTable resultado = con.queryConsulta("SELECT id FROM espacios where nombre = '" + nombre + "'");

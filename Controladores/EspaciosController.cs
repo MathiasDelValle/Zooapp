@@ -12,7 +12,7 @@ namespace Controladores
 
         public static bool altaEspacio(string nombre)
         {
-            if (Espacio.existe(nombre))
+            if (Espacio.exist(nombre))
             {
                 throw new Exception("El nombre de espacio ya esta siendo utilizado");
             }

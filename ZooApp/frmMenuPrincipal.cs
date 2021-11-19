@@ -74,5 +74,13 @@ namespace ZooApp
             frmAltaEspacio.Parent = this;
             frmAltaEspacio.Show();
         }
+
+        private void altaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmAltaJaula frmAltaJaula = new frmAltaJaula();
+            frmAltaJaula.TopLevel = false;
+            frmAltaJaula.Parent = this;
+            frmAltaJaula.Show();
+        }
     }
 }

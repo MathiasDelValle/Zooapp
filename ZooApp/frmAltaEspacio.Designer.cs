@@ -68,6 +68,7 @@
             this.Controls.Add(this.txtEspacio);
             this.Controls.Add(this.label1);
             this.Name = "frmAltaEspacio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmAltaEspacio";
             this.ResumeLayout(false);
             this.PerformLayout();
