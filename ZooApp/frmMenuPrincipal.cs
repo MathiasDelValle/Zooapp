@@ -106,5 +106,21 @@ namespace ZooApp
             modificarAnimal.Parent = this;
             modificarAnimal.Show();
         }
+
+        private void venderTicketToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVentaTicket modificarAnimal = new frmVentaTicket();
+            modificarAnimal.TopLevel = false;
+            modificarAnimal.Parent = this;
+            modificarAnimal.Show();
+        }
+
+        private void listadoVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lsitado_Ventas modificarAnimal = new lsitado_Ventas();
+            modificarAnimal.TopLevel = false;
+            modificarAnimal.Parent = this;
+            modificarAnimal.Show();
+        }
     }
 }

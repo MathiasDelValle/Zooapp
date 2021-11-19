@@ -88,6 +88,18 @@
     <Compile Include="frmModificarJaula.Designer.cs">
       <DependentUpon>frmModificarJaula.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVentaTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentaTicket.Designer.cs">
+      <DependentUpon>frmVentaTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lsitado Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lsitado Ventas.Designer.cs">
+      <DependentUpon>lsitado Ventas.cs</DependentUpon>
+    </Compile>
     <Compile Include="modificarAnimal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmModificarJaula.resx">
       <DependentUpon>frmModificarJaula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVentaTicket.resx">
+      <DependentUpon>frmVentaTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lsitado Ventas.resx">
+      <DependentUpon>lsitado Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modificarAnimal.resx">
       <DependentUpon>modificarAnimal.cs</DependentUpon>

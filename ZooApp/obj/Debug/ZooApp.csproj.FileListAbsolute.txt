@@ -42,3 +42,5 @@ C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmAltaJaula.resou
 C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmModificarEspacio.resources
 C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmModificarJaula.resources
 C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.modificarAnimal.resources
+C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmVentaTicket.resources
+C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.lsitado_Ventas.resources

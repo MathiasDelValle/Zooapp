@@ -47,6 +47,8 @@
             this.listadoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.altaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.listadoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.venderTicketToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listadoVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -169,6 +171,9 @@
             // 
             // menuVentas
             // 
+            this.menuVentas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.venderTicketToolStripMenuItem,
+            this.listadoVentasToolStripMenuItem});
             this.menuVentas.Name = "menuVentas";
             this.menuVentas.Size = new System.Drawing.Size(180, 22);
             this.menuVentas.Text = "Venta";
@@ -216,6 +221,20 @@
             this.listadoToolStripMenuItem2.Text = "Listado";
             this.listadoToolStripMenuItem2.Click += new System.EventHandler(this.listadoToolStripMenuItem2_Click);
             // 
+            // venderTicketToolStripMenuItem
+            // 
+            this.venderTicketToolStripMenuItem.Name = "venderTicketToolStripMenuItem";
+            this.venderTicketToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.venderTicketToolStripMenuItem.Text = "Vender Ticket";
+            this.venderTicketToolStripMenuItem.Click += new System.EventHandler(this.venderTicketToolStripMenuItem_Click);
+            // 
+            // listadoVentasToolStripMenuItem
+            // 
+            this.listadoVentasToolStripMenuItem.Name = "listadoVentasToolStripMenuItem";
+            this.listadoVentasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listadoVentasToolStripMenuItem.Text = "Listado Ventas";
+            this.listadoVentasToolStripMenuItem.Click += new System.EventHandler(this.listadoVentasToolStripMenuItem_Click);
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,5 +279,7 @@
         private System.Windows.Forms.ToolStripMenuItem altaToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem listadoToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem menuVentas;
+        private System.Windows.Forms.ToolStripMenuItem venderTicketToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem listadoVentasToolStripMenuItem;
     }
 }

@@ -46,6 +46,7 @@
     <Compile Include="EspaciosController.cs" />
     <Compile Include="JaulasController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketsController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modelos\Modelos.csproj">
