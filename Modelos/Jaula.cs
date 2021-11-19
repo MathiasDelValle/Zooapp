@@ -10,10 +10,13 @@ namespace Modelos
     public class Jaula
     {
 
-        private int id;
-        private string nombre;
-        private Espacio espacio;
+        public int id;
+        public string nombre;
+        public Espacio espacio;
         private List<Animal> animales;
+
+        public int Id { get => id; set => id = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
 
         public Jaula()
         {
@@ -40,15 +43,6 @@ namespace Modelos
             this.espacio = Espacio.find(idEspacio);
         }
 
-        public int Id()
-        {
-            return this.id;
-        }
-
-        public string Nombre()
-        {
-            return this.nombre;
-        }
 
         public void setNombre(string nombre)
         {
@@ -110,6 +104,37 @@ namespace Modelos
             a.setEspacio(Espacio.find((int)resultado.Rows[0]["espacio_id"]));
 
             return a;
+        }
+
+        public static List<Jaula> all(bool activos = true)
+        {
+            Conexion con = new Conexion();
+            string sql = "SELECT * FROM jaulas";
+            if (activos)
+            {
+                sql += " WHERE deleted_at IS NULL";
+            }
+
+            DataTable dt = con.queryConsulta(sql);
+
+            List<Jaula> jaulas = new List<Jaula>();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                int idJaula = (int)row["id"];
+                string jaula = row["nombre"].ToString();
+                int idEspacio = (int)row["espacio_id"];
+
+                jaulas.Add(new Jaula(idJaula, jaula, idEspacio));
+            }
+
+            return jaulas;
+        }
+
+        override
+        public string ToString()
+        {
+            return this.nombre;
         }
 
     }

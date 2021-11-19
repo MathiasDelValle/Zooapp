@@ -7,8 +7,14 @@ using Modelos;
 
 namespace Controladores
 {
-    class AnimalesController
+    public class AnimalesController
     { 
+
+        public static List<Jaula> vistaAltasAnimales()
+        {
+            return Jaula.all();
+        }
+
         public static List<Animal> listadoAnimales()
         {
             return Animal.all();

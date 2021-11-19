@@ -3,10 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Modelos;
 
 namespace Controladores
 {
-    class EspaciosController
+    public class EspaciosController
     {
+
+        public static bool altaEspacio(string nombre)
+        {
+            if (Espacio.existe(nombre))
+            {
+                throw new Exception("El nombre de espacio ya esta siendo utilizado");
+            }
+
+            Espacio e = new Espacio(nombre);
+            return e.save();
+        }
     }
 }

@@ -14,9 +14,16 @@ namespace Modelos
         private string nombre;
         private List<Jaula> jaulas;
 
-        public string Nombre()
+        public int Id { get => id; set => id = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+
+        public Espacio()
         {
-            return this.nombre;
+        }
+
+        public Espacio(string nombre)
+        {
+            this.nombre = nombre;
         }
 
         public void setNombre(string nombre)
@@ -47,7 +54,22 @@ namespace Modelos
 
         public bool save()
         {
-            return true;
+            string sql = "INSERT INTO espacios (nombre) VALUES ('" + this.nombre + "');";
+
+            if (this.id > 0)
+            {
+                sql = "UPDATE espacios SET nombre = '" + this.nombre + "' WHERE id = " + this.id + ";";
+            }
+
+            Conexion con = new Conexion();
+            return con.queryInsertUpdate(sql);
+        }
+
+        public bool delete()
+        {
+            string sql = "UPDATE espacios SET deleted_at = NOW() WHERE id = " + this.Id;
+            Conexion con = new Conexion();
+            return con.queryInsertUpdate(sql);
         }
 
         public static Espacio find(int id)
@@ -64,6 +86,14 @@ namespace Modelos
             a.setNombre((string)resultado.Rows[0]["nombre"]);
 
             return a;
+        }
+
+        public static bool existe(string nombre)
+        {
+            Conexion con = new Conexion();
+            DataTable resultado = con.queryConsulta("SELECT id FROM espacios where nombre = '" + nombre + "'");
+
+            return resultado.Rows.Count > 0;
         }
     }
 }

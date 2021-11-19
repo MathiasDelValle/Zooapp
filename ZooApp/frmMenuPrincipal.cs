@@ -58,5 +58,21 @@ namespace ZooApp
             this.frmLogin.Show();
             this.Dispose();
         }
+
+        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAltaAnimal frmAltaAnimal = new frmAltaAnimal();
+            frmAltaAnimal.TopLevel = false;
+            frmAltaAnimal.Parent = this;
+            frmAltaAnimal.Show();
+        }
+
+        private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmAltaEspacio frmAltaEspacio = new frmAltaEspacio();
+            frmAltaEspacio.TopLevel = false;
+            frmAltaEspacio.Parent = this;
+            frmAltaEspacio.Show();
+        }
     }
 }

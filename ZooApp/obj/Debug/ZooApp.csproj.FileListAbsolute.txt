@@ -36,3 +36,6 @@ C:\Users\cferreri\source\repos\ZooApp\ZooApp\bin\Debug\System.Numerics.Vectors.x
 C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.csproj.CopyComplete
 C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.exe
 C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.pdb
+C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmAltaAnimal.resources
+C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmAltaEspacio.resources
+C:\Users\cferreri\source\repos\ZooApp\ZooApp\obj\Debug\ZooApp.frmAltaJaula.resources

@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAltaAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaAnimal.Designer.cs">
+      <DependentUpon>frmAltaAnimal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaEspacio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaEspacio.Designer.cs">
+      <DependentUpon>frmAltaEspacio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaJaula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaJaula.Designer.cs">
+      <DependentUpon>frmAltaJaula.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +78,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAltaAnimal.resx">
+      <DependentUpon>frmAltaAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaEspacio.resx">
+      <DependentUpon>frmAltaEspacio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaJaula.resx">
+      <DependentUpon>frmAltaJaula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>

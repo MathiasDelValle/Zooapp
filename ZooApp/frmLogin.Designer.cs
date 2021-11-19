@@ -54,6 +54,7 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(147, 20);
             this.txtPass.TabIndex = 10;
+            this.txtPass.Text = "123";
             this.txtPass.UseSystemPasswordChar = true;
             // 
             // txtUsuario
@@ -62,6 +63,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(147, 20);
             this.txtUsuario.TabIndex = 9;
+            this.txtUsuario.Text = "mati";
             // 
             // btnIniciarSesion
             // 

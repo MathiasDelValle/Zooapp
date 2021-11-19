@@ -65,11 +65,11 @@ namespace Modelos
 
         public bool save()
         {
-            string sql = "INSERT INTO animales (nombre, jaula_id) VALUES ('" + this.nombre + "', " + this.jaula.Id() + ");";
+            string sql = "INSERT INTO animales (nombre, jaula_id) VALUES ('" + this.nombre + "', " + this.jaula.Id + ");";
 
             if(this.id > 0)
             {
-                sql = "UPDATE animales SET nombre = '" + this.nombre + "', jaula_id = " + this.jaula.Id() + " WHERE id = " + this.id + ";";
+                sql = "UPDATE animales SET nombre = '" + this.nombre + "', jaula_id = " + this.jaula.Id + " WHERE id = " + this.id + ";";
             }
 
             Conexion con = new Conexion();
