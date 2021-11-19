@@ -7,7 +7,7 @@ using System.Data;
 
 namespace Modelos
 {
-    class Jaula
+    public class Jaula
     {
 
         private int id;

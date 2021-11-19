@@ -7,7 +7,7 @@ using System.Data;
 
 namespace Modelos
 {
-    class Espacio
+    public class Espacio
     {
 
         private int id;

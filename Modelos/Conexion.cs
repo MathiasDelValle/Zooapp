@@ -20,7 +20,7 @@ namespace Modelos
                 string puerto = "3306";
                 string usuario = "root";
                 string password = "";
-                string cadenaConexion = "server=" + servidor + "; port=" + puerto + "; user id=" + usuario + "; password=" + password + ";database=controlstock;";
+                string cadenaConexion = "server=" + servidor + "; port=" + puerto + "; user id=" + usuario + "; password=" + password + ";database=zooApp;";
 
                 return new MySqlConnection(cadenaConexion);
             }catch(Exception ex)

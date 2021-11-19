@@ -7,7 +7,7 @@ using System.Data;
 
 namespace Modelos
 {
-    class Animal
+    public class Animal
     {
         private int id;
         private string nombre;
@@ -65,7 +65,22 @@ namespace Modelos
 
         public bool save()
         {
-            return true;
+            string sql = "INSERT INTO animales (nombre, jaula_id) VALUES ('" + this.nombre + "', " + this.jaula.Id() + ");";
+
+            if(this.id > 0)
+            {
+                sql = "UPDATE animales SET nombre = '" + this.nombre + "', jaula_id = " + this.jaula.Id() + " WHERE id = " + this.id + ";";
+            }
+
+            Conexion con = new Conexion();
+            return con.queryInsertUpdate(sql);
+        }
+
+        public bool delete()
+        {
+            string sql = "UPDATE animales SET deleted_at = NOW() WHERE id = " + this.id + ";";
+            Conexion con = new Conexion();
+            return con.queryInsertUpdate(sql);
         }
 
         public static Animal find(int id)
@@ -85,5 +100,29 @@ namespace Modelos
             return a;
         }
 
+        public static List<Animal> all(bool activos = true)
+        {
+            Conexion con = new Conexion();
+            string sql = "SELECT * FROM animales";
+            if (activos)
+            {
+                sql += " WHERE deleted_at IS NULL";
+            }
+
+            DataTable dt = con.queryConsulta(sql);
+
+            List<Animal> animales = new List<Animal>();
+   
+            foreach (DataRow row in dt.Rows)
+            {
+                int idAnimal = (int)row["id"];
+                string nombreAnimal = row["nombre"].ToString();
+                int idJaula = (int)row["jaula_id"];
+
+                animales.Add(new Animal(idAnimal, nombreAnimal, idJaula));
+            }
+
+            return animales;
+        }
     }
 }

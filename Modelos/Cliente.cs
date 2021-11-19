@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Modelos
 {
-    class Cliente
+    public class Cliente
     {
         private string nombre;
         private string documento;
@@ -15,5 +15,7 @@ namespace Modelos
         {
             return true;
         }
+
+
     }
 }
