@@ -20,5 +20,32 @@ namespace Controladores
             Espacio e = new Espacio(nombre);
             return e.save();
         }
+
+        public static bool editarEspacio(int idEspacio, string nombre)
+        {
+            Espacio e = Espacio.find(idEspacio);
+            if (e == null)
+            {
+                throw new Exception("El espacio no existe");
+            }
+
+            e.setNombre(nombre);
+            return e.save();
+        }
+
+        public static bool bajaEspacio(int idEspacio)
+        {
+            Espacio e = Espacio.find(idEspacio);
+            if (e == null)
+            {
+                throw new Exception("El espacio no existe");
+            }
+            return e.delete();
+        }
+
+        public static List<Espacio> obtenerEspacios()
+        {
+            return Espacio.all();
+        }
     }
 }

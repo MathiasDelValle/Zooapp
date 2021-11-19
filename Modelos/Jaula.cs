@@ -89,7 +89,7 @@ namespace Modelos
 
             if (this.id > 0)
             {
-                sql = "UPDATE jaulas SET nombre = '" + this.nombre + "', jaula_id = " + this.espacio.Id + " WHERE id = " + this.id + ";";
+                sql = "UPDATE jaulas SET nombre = '" + this.nombre + "', espacio_id = " + this.espacio.Id + " WHERE id = " + this.id + ";";
             }
 
             Conexion con = new Conexion();

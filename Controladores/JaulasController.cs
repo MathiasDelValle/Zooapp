@@ -59,7 +59,7 @@ namespace Controladores
             }
         }
 
-        public static bool eliminarAnimal(int idJaula)
+        public static bool eliminarJaula(int idJaula)
         {
             try
             {

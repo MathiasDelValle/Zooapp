@@ -82,5 +82,21 @@ namespace ZooApp
             frmAltaJaula.Parent = this;
             frmAltaJaula.Show();
         }
+
+        private void listadoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            frmModificarEspacio modificarEspacio = new frmModificarEspacio();
+            modificarEspacio.TopLevel = false;
+            modificarEspacio.Parent = this;
+            modificarEspacio.Show();
+        }
+
+        private void listadoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmModificarJaula modificarJaula = new frmModificarJaula();
+            modificarJaula.TopLevel = false;
+            modificarJaula.Parent = this;
+            modificarJaula.Show();
+        }
     }
 }

@@ -54,7 +54,7 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(356, 44);
+            this.lblFecha.Location = new System.Drawing.Point(424, 406);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(60, 16);
             this.lblFecha.TabIndex = 14;
@@ -64,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(300, 42);
+            this.label3.Location = new System.Drawing.Point(359, 406);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 18);
             this.label3.TabIndex = 13;
@@ -74,7 +74,7 @@
             // 
             this.lblNivel.AutoSize = true;
             this.lblNivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNivel.Location = new System.Drawing.Point(573, 44);
+            this.lblNivel.Location = new System.Drawing.Point(629, 406);
             this.lblNivel.Name = "lblNivel";
             this.lblNivel.Size = new System.Drawing.Size(78, 16);
             this.lblNivel.TabIndex = 12;
@@ -84,7 +84,7 @@
             // 
             this.lblUsuarioLogeado.AutoSize = true;
             this.lblUsuarioLogeado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioLogeado.Location = new System.Drawing.Point(160, 44);
+            this.lblUsuarioLogeado.Location = new System.Drawing.Point(169, 408);
             this.lblUsuarioLogeado.Name = "lblUsuarioLogeado";
             this.lblUsuarioLogeado.Size = new System.Drawing.Size(124, 16);
             this.lblUsuarioLogeado.TabIndex = 11;
@@ -94,7 +94,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(517, 42);
+            this.label2.Location = new System.Drawing.Point(573, 404);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 18);
             this.label2.TabIndex = 10;
@@ -105,7 +105,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 42);
+            this.label1.Location = new System.Drawing.Point(12, 408);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(151, 18);
             this.label1.TabIndex = 9;
@@ -199,6 +199,7 @@
             this.listadoToolStripMenuItem1.Name = "listadoToolStripMenuItem1";
             this.listadoToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.listadoToolStripMenuItem1.Text = "Listado";
+            this.listadoToolStripMenuItem1.Click += new System.EventHandler(this.listadoToolStripMenuItem1_Click);
             // 
             // altaToolStripMenuItem2
             // 
@@ -212,6 +213,7 @@
             this.listadoToolStripMenuItem2.Name = "listadoToolStripMenuItem2";
             this.listadoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.listadoToolStripMenuItem2.Text = "Listado";
+            this.listadoToolStripMenuItem2.Click += new System.EventHandler(this.listadoToolStripMenuItem2_Click);
             // 
             // frmMenuPrincipal
             // 
